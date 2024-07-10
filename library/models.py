@@ -10,3 +10,4 @@ class Book(models.Model):
     description = models.TextField()
     likes = models.IntegerField(default=0)
     comments = models.IntegerField(default=0)
+    pdf_file = models.FileField(upload_to='books/pdfs/', default='books/pdfs/mml-book.pdf')
